@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Smart Device</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: linear-gradient(to right bottom, #0fff5d, #00ff6d, #00ff7b, #00ff88, #00ff94, #00ffa2, #00ffae, #00ffba, #00ffca, #00ffd8, #00ffe5, #0efff0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 30px; /* เพิ่มขนาด padding */
+            border-radius: 15px; /* เพิ่มขนาด border-radius */
+            box-shadow: 0 30px 30px rgba(0, 0, 0, 0.1); /* เพิ่มขนาด shadow */
+            text-align: center;
+            transform: scale(1); /* เพิ่มขนาดของ login-container */
+        }
+        .login-container h2 {
+            margin: 15px 0;
+            font-size: 1.5em; /* เพิ่มขนาด font */
+        }
+        .login-container input {
+            width: 60%; /* เพิ่มขนาด width */
+            padding: 15px; /* เพิ่มขนาด padding */
+            margin: 15px 0; /* เพิ่มขนาด margin */
+            border: 1px solid #ccc;
+            border-radius: 10px; /* เพิ่มขนาด border-radius */
+            font-size: 1em; /* เพิ่มขนาด font */
+        }
+        .login-container button {
+            padding: 15px 30px; /* เพิ่มขนาด padding */
+            border: none;
+            border-radius: 10px; /* เพิ่มขนาด border-radius */
+            background-color: #0fff5d;
+            color: white;
+            font-size: 1.2em; /* เพิ่มขนาด font */
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background-color: #00ff6d;
+        }
+        .login-container .icon {
+            font-size: 75px; /* เพิ่มขนาด font */
+            color: #271090;
+            margin-bottom: 15px; /* เพิ่มขนาด margin */
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <i class="fa-regular fa-circle-user icon"></i>
+        <h2>Login</h2>
+        <form action="/login" method="post">
+            <div>
+                <input type="text" placeholder="Username" name="username" required>
+            </div>
+            <div>
+                <input type="password" placeholder="Password" name="password" required>
+            </div>
+            <div>
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
